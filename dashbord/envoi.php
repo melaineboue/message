@@ -65,7 +65,8 @@ include_once 'Inc/navbar.php';
                                             <div class="control-group">
                                                 <label class="control-label" for="date01">No Destinataire(s)</label>
                                                 <div class="controls">
-                                                    <textarea name="recipient"  class="input-xlarge textarea form-control" id="date01" style="width: 85%; height: 70px" placeholder="Ex : 22507001122,22505667788,22541223355,..."></textarea>
+                                                    <input type="text" name="recipient" class="span6 recipient" value="<?php echo $expeditor_name ?>" readonly id="typeahead" placeholder="Nom de l'expéditeur"  data-provide="typeahead" data-items="4" style="height: 40px">
+                                                    <!--<textarea name="recipient"  class="input-xlarge textarea form-control recipient" id="date01" style="width: 85%; height: 70px" placeholder="Ex : 22507001122,22505667788,22541223355,..."></textarea>-->
         <!--                                            <p class="help-block">In addition to freeform text, any HTML5 text-based input appears like so.</p>-->
                                                 </div>
                                             </div>
@@ -213,7 +214,60 @@ include_once 'Inc/navbar.php';
 include_once 'Inc/scriptJS.php';
 ?>
 
+<script src="bootstrap/js/jquery.js"></script>
 <script src="../js/envoi_msg.js"></script>
+
+<script>
+    $('.message_envoye').hide();
+    $('.message_envoye').removeClass('hidden');
+
+    $('.bouton_envoyer_message').click(function(){
+
+
+        var url='authsms.php?sender='+$('.sender').val()+'&recipient='+$('.recipient').val()+'&message='+$('.message_sms').val();
+        alert(url);
+        $.ajax({
+            url : url,
+            type : 'GET',
+            dataType : 'html',
+            success: function(reponse, statut){
+
+                if(reponse=='non')
+                {
+
+                }
+                else
+                {
+                    alert(reponse);
+                    $('.message_envoye').hide();
+                    $('.message_envoye').show(500);
+
+                    $('.sender').val('');
+                    $('.recipient').val('');
+                    $('.message').val('');
+
+                    //alert(reponse);
+                    $.ajax({
+                        url : reponse,
+                        type : 'GET',
+                        dataType : 'html',
+                        success: function(resultat, statut2){},
+                        error: function(resultat, statut){}
+                    });
+                }
+
+
+            },
+            error: function(resultat, statut){
+
+            }
+
+
+        });
+    });
+
+
+</script>
 
 </body>
 

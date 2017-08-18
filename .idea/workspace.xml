@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7e6da57-2b82-454e-be66-8d1a9ac04dd2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old/css/envoi_message.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old/dashbord/modele/modele_envoi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old/js/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old/js/envoi_message.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/old/_class/Contact.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/old/_class/Message.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/old/_class/User.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/old/.idea/workspace.xml" afterPath="$PROJECT_DIR$/old/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/old/dashbord/Inc/head.php" afterPath="$PROJECT_DIR$/old/dashbord/Inc/head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/old/dashbord/envoi-single.php" afterPath="$PROJECT_DIR$/old/dashbord/envoi-single.php" />
-    </list>
+    <list default="true" id="f7e6da57-2b82-454e-be66-8d1a9ac04dd2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,16 +22,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Contact.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_class/Contact.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="65" column="5" lean-forward="false" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Message.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_class/Message.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,8 +35,8 @@
       <file leaf-file-name="envoi-single.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashbord/envoi-single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="55" column="42" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="55" selection-end-column="42" />
+            <state relative-caret-position="794">
+              <caret line="150" column="9" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="150" selection-end-column="9" />
               <folding>
                 <marker date="1503058455983" expanded="true" signature="5215:5224" ph="..." />
               </folding>
@@ -116,14 +94,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="envoi.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="envoi.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashbord/envoi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="187" column="129" lean-forward="false" selection-start-line="187" selection-start-column="129" selection-end-line="187" selection-end-column="129" />
+            <state relative-caret-position="323">
+              <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1503067228831" expanded="false" signature="2634:2658" ph="..." />
+                <marker date="1503067228831" expanded="false" signature="3411:3436" ph="..." />
+                <marker date="1503067228831" expanded="false" signature="3516:3533" ph="..." />
+                <marker date="1503067228831" expanded="false" signature="3588:3614" ph="⟺" />
+                <marker date="1503067228831" expanded="false" signature="4846:4876" ph="..." />
+                <marker date="1503067228831" expanded="false" signature="8539:8569" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reduire.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dashbord/Inc/reduire.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,6 +135,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>sender</find>
+      <find>envoye</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,6 +157,7 @@
         <option value="$PROJECT_DIR$/dashbord/modele/modele_envoi.php" />
         <option value="$PROJECT_DIR$/dashbord/Inc/sidebar.php" />
         <option value="$PROJECT_DIR$/dashbord/envoi.php" />
+        <option value="$PROJECT_DIR$/dashbord/Inc/reduire.php" />
       </list>
     </option>
   </component>
@@ -381,12 +377,12 @@
       <option name="presentableId" value="Default" />
       <updated>1502792861244</updated>
       <workItem from="1502792862547" duration="17492000" />
-      <workItem from="1503059235336" duration="4466000" />
+      <workItem from="1503059235336" duration="6280000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21958000" />
+    <option name="totallyTimeSpent" value="23772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1331" extended-state="6" />
@@ -523,16 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashbord/envoi-single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="55" column="42" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="55" selection-end-column="42" />
-          <folding>
-            <marker date="1503058455983" expanded="true" signature="5215:5224" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashbord/modele/modele_envoi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -557,13 +543,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dashbord/envoi-single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="794">
+          <caret line="150" column="9" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="150" selection-end-column="9" />
+          <folding>
+            <marker date="1503058455983" expanded="true" signature="5215:5224" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dashbord/envoi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="187" column="129" lean-forward="false" selection-start-line="187" selection-start-column="129" selection-end-line="187" selection-end-column="129" />
+        <state relative-caret-position="323">
+          <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1503067228831" expanded="false" signature="2634:2658" ph="..." />
+            <marker date="1503067228831" expanded="false" signature="3411:3436" ph="..." />
+            <marker date="1503067228831" expanded="false" signature="3516:3533" ph="..." />
+            <marker date="1503067228831" expanded="false" signature="3588:3614" ph="⟺" />
+            <marker date="1503067228831" expanded="false" signature="4846:4876" ph="..." />
+            <marker date="1503067228831" expanded="false" signature="8539:8569" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashbord/Inc/reduire.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>

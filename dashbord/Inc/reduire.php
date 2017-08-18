@@ -2,7 +2,7 @@
     <div class="alert alert-success message_envoye hidden">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <h4>Succès</h4>
-        L'opération s'est terminée avec succès !
+        Le message a été avec succès !!!
     </div>
     <div class="navbar">
         <div class="navbar-inner">
