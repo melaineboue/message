@@ -94,29 +94,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="envoi.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="envoi.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashbord/envoi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+            <state relative-caret-position="652">
+              <caret line="253" column="59" lean-forward="false" selection-start-line="253" selection-start-column="59" selection-end-line="253" selection-end-column="59" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1503067228831" expanded="false" signature="2634:2658" ph="..." />
-                <marker date="1503067228831" expanded="false" signature="3411:3436" ph="..." />
-                <marker date="1503067228831" expanded="false" signature="3516:3533" ph="..." />
-                <marker date="1503067228831" expanded="false" signature="3588:3614" ph="⟺" />
-                <marker date="1503067228831" expanded="false" signature="4846:4876" ph="..." />
-                <marker date="1503067228831" expanded="false" signature="8539:8569" ph="..." />
+                <marker date="1503083796642" expanded="false" signature="3549:3574" ph="..." />
+                <marker date="1503083796642" expanded="false" signature="3654:3671" ph="..." />
+                <marker date="1503083796642" expanded="false" signature="3726:3752" ph="⟺" />
+                <marker date="1503083796642" expanded="false" signature="4984:5014" ph="..." />
+                <marker date="1503083796642" expanded="false" signature="8677:8707" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reduire.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reduire.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashbord/Inc/reduire.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+            <state relative-caret-position="-125">
+              <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -156,8 +155,8 @@
         <option value="$PROJECT_DIR$/dashbord/envoi-multiple.php" />
         <option value="$PROJECT_DIR$/dashbord/modele/modele_envoi.php" />
         <option value="$PROJECT_DIR$/dashbord/Inc/sidebar.php" />
-        <option value="$PROJECT_DIR$/dashbord/envoi.php" />
         <option value="$PROJECT_DIR$/dashbord/Inc/reduire.php" />
+        <option value="$PROJECT_DIR$/dashbord/envoi.php" />
       </list>
     </option>
   </component>
@@ -377,12 +376,12 @@
       <option name="presentableId" value="Default" />
       <updated>1502792861244</updated>
       <workItem from="1502792862547" duration="17492000" />
-      <workItem from="1503059235336" duration="6280000" />
+      <workItem from="1503059235336" duration="7396000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23772000" />
+    <option name="totallyTimeSpent" value="24888000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1331" extended-state="6" />
@@ -553,27 +552,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashbord/envoi.php">
+    <entry file="file://$PROJECT_DIR$/dashbord/Inc/reduire.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1503067228831" expanded="false" signature="2634:2658" ph="..." />
-            <marker date="1503067228831" expanded="false" signature="3411:3436" ph="..." />
-            <marker date="1503067228831" expanded="false" signature="3516:3533" ph="..." />
-            <marker date="1503067228831" expanded="false" signature="3588:3614" ph="⟺" />
-            <marker date="1503067228831" expanded="false" signature="4846:4876" ph="..." />
-            <marker date="1503067228831" expanded="false" signature="8539:8569" ph="..." />
-          </folding>
+        <state relative-caret-position="-125">
+          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashbord/Inc/reduire.php">
+    <entry file="file://$PROJECT_DIR$/dashbord/envoi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="652">
+          <caret line="253" column="59" lean-forward="false" selection-start-line="253" selection-start-column="59" selection-end-line="253" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1503083796642" expanded="false" signature="3549:3574" ph="..." />
+            <marker date="1503083796642" expanded="false" signature="3654:3671" ph="..." />
+            <marker date="1503083796642" expanded="false" signature="3726:3752" ph="⟺" />
+            <marker date="1503083796642" expanded="false" signature="4984:5014" ph="..." />
+            <marker date="1503083796642" expanded="false" signature="8677:8707" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

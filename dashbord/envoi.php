@@ -58,14 +58,14 @@ include_once 'Inc/navbar.php';
                                             <div class="control-group">
                                                 <label class="control-label" for="typeahead">Nom Expéditeur </label>
                                                 <div class="controls">
-                                                    <input type="text" name="sender" class="span6 sender" value="<?php echo $expeditor_name ?>" readonly id="typeahead" placeholder="Nom de l'expéditeur"  data-provide="typeahead" data-items="4" style="height: 40px">
+                                                    <input type="text" name="sender" class="span6 sender" value="<?php //echo $expeditor_name ?>"  id="typeahead" placeholder="Nom de l'expéditeur"  data-provide="typeahead" data-items="4" style="height: 40px">
                                                 </div>
                                             </div>
 
                                             <div class="control-group">
                                                 <label class="control-label" for="date01">No Destinataire(s)</label>
                                                 <div class="controls">
-                                                    <input type="text" name="recipient" class="span6 recipient" value="<?php echo $expeditor_name ?>" readonly id="typeahead" placeholder="Nom de l'expéditeur"  data-provide="typeahead" data-items="4" style="height: 40px">
+                                                    <input type="text" name="recipient" class="span6 recipient"  placeholder=""  >
                                                     <!--<textarea name="recipient"  class="input-xlarge textarea form-control recipient" id="date01" style="width: 85%; height: 70px" placeholder="Ex : 22507001122,22505667788,22541223355,..."></textarea>-->
         <!--                                            <p class="help-block">In addition to freeform text, any HTML5 text-based input appears like so.</p>-->
                                                 </div>
@@ -251,7 +251,7 @@ include_once 'Inc/scriptJS.php';
                         url : reponse,
                         type : 'GET',
                         dataType : 'html',
-                        success: function(resultat, statut2){},
+                        success: function(retour, statut2){},
                         error: function(resultat, statut){}
                     });
                 }

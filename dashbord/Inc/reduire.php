@@ -1,8 +1,8 @@
 <div class="row-fluid">
     <div class="alert alert-success message_envoye hidden">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <h4>Succès</h4>
-        Le message a été avec succès !!!
+        <h4>Message envoyé !!! </h4>
+        Le message a été envoyé avec succès !!!
     </div>
     <div class="navbar">
         <div class="navbar-inner">
