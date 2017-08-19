@@ -39,32 +39,33 @@ $_SESSION['account'] = 'register.php';
             <form class="" method="post" action="#">
 
                 <div class="form-group">
-                    <label for="name" class="cols-sm-2">Votre nom</label>
+                    <label for="name" class="cols-sm-2">Votre nom *</label>
                     <div class="cols-sm-10">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                            <input type="text" class="form-control input-lg" name="name" id="name"  placeholder="Entrez votre nom"/>
+                            <input type="text" class="form-control input-lg" name="name" id="name"  placeholder="Entrez votre nom" required />
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="email" class="cols-sm-2 control-label">Votre adresse Email</label>
+                    <label for="email" class="cols-sm-2 control-label">Votre adresse Email *</label>
                     <div class="cols-sm-10">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                            <input type="text" class="form-control input-lg" name="email" id="email"  placeholder="Entrez votre e-mail"/>
+                            <input type="text" class="form-control input-lg" name="email" id="email"  placeholder="Entrez votre e-mail" required />
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="username" class="cols-sm-2 control-label">Nom utilisateur</label>
+                    <label for="username" class="cols-sm-2 control-label">Nom utilisateur *</label>
                     <div class="cols-sm-10">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                            <input type="text" class="form-control input-lg" name="username" id="username"  placeholder="Entrez votre nom utilisateur"/>
+                            <input type="text" class="form-control input-lg" name="username" id="username"  placeholder="Entrez votre nom utilisateur" required />
                         </div>
+                        <span class="username_already_used hidden" >Nom d'utilisateur est déjà utilisé</span>
                     </div>
                 </div>
 
@@ -86,13 +87,21 @@ $_SESSION['account'] = 'register.php';
                             <input type="password" class="form-control input-lg" name="confirm" id="confirm"  placeholder="Confirmez votre de passe"/>
                         </div>
                     </div>
+                    <span class="password_non_conform hidden">Les 2 mots de passe sont pas conformes</span>
                 </div>
 
                 <div class="form-group ">
                     <a href="http://deepak646.blogspot.in" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
                 </div>
 
+
+
             </form>
+
+            <div class="alert alert-success message_compte_cree hidden">
+                Votre compte a été, vous serez redirigé dans un instant
+            </div>
+
         </div>
     </div>
 </div>

@@ -14,9 +14,10 @@ class User
     public $username;
     public $name_messenger;
     public $remaining_message;
+    public $email;
 
 
-    public function __construct($id,$nom,$prenom,$username,$name_messenger,$remaining_message)
+    public function __construct($id,$nom,$prenom,$username,$name_messenger,$remaining_message,$email)
     {
         $this->setId($id);
         $this->setNom($nom);
@@ -24,6 +25,7 @@ class User
         $this->setUsername($username);
         $this->setNameMessenger($name_messenger);
         $this->setRemainingMessage($remaining_message);
+        $this->setEmail($email);
     }
 
 
@@ -66,6 +68,12 @@ class User
     }
 
 
+    public function setEmail($email)
+    {
+        $this->email=$email;
+    }
+
+
 
 
 
@@ -105,6 +113,12 @@ class User
     public function getRemainingMessage()
     {
         return $this->remaining_message;
+    }
+
+
+    public function getEmail()
+    {
+        return $this->email;
     }
 
 }

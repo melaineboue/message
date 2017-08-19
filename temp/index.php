@@ -225,7 +225,7 @@ include_once 'Inc/scriptJS.php';
 
 
         var url='authsms.php?sender='+$('.sender').val()+'&recipient='+$('.recipient').val()+'&message='+$('.message_sms').val();
-        alert(url);
+       
         $.ajax({
             url : url,
             type : 'GET',
@@ -238,7 +238,7 @@ include_once 'Inc/scriptJS.php';
                 }
                 else
                 {
-                    alert(reponse);
+                   
                     $('.message_envoye').hide();
                     $('.message_envoye').show(500);
 

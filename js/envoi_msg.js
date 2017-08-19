@@ -1,7 +1,7 @@
 /**
  * Created by Melaine on 18/08/2017.
  */
-var nombre_caractere_un_msg=256;
+var nombre_caractere_un_msg=160;
 var nombre_message;
 updateNumbermsg();
 

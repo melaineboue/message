@@ -64,13 +64,7 @@
                             <li>
                                 <a tabindex="-1" href="contact-group.php">Créer un groupe de contacts</a>
                             </li>
-                            <!--<li>
-                                <a tabindex="-1" href="#">Calendar</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a tabindex="-1" href="#">FAQ</a>
-                            </li>-->
+
                         </ul>
                     </li>
                     <!--<li class="dropdown">
