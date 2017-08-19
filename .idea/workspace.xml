@@ -22,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register_user.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="register_user.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/register_user.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
@@ -34,19 +34,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="envoi-single.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashbord/envoi-single.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/version/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="794">
-              <caret line="150" column="9" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="150" selection-end-column="9" />
+            <state relative-caret-position="189">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
-                <marker date="1503058455983" expanded="true" signature="5215:5224" ph="..." />
+                <element signature="e#6#89#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="envoi_msg.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="envoi_msg.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/envoi_msg.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -59,8 +59,8 @@
       <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashbord/Inc/head.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -106,8 +106,8 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="65" column="142" lean-forward="true" selection-start-line="65" selection-start-column="142" selection-end-line="65" selection-end-column="142" />
+            <state relative-caret-position="757">
+              <caret line="120" column="32" lean-forward="false" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -150,7 +150,6 @@
         <option value="$PROJECT_DIR$/_class/Contact.php" />
         <option value="$PROJECT_DIR$/js/angular.js" />
         <option value="$PROJECT_DIR$/js/envoi_message.js" />
-        <option value="$PROJECT_DIR$/dashbord/Inc/head.php" />
         <option value="$PROJECT_DIR$/css/envoi_message.css" />
         <option value="$PROJECT_DIR$/dashbord/envoi-single.php" />
         <option value="$PROJECT_DIR$/dashbord/envoi-multiple.php" />
@@ -160,9 +159,11 @@
         <option value="$PROJECT_DIR$/js/envoi_msg.js" />
         <option value="$PROJECT_DIR$/dashbord/Inc/navbar.php" />
         <option value="$PROJECT_DIR$/dashbord/envoi.php" />
-        <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/_class/User.php" />
         <option value="$PROJECT_DIR$/js/register_user.js" />
+        <option value="$PROJECT_DIR$/version/index.php" />
+        <option value="$PROJECT_DIR$/dashbord/Inc/head.php" />
+        <option value="$PROJECT_DIR$/register.php" />
       </list>
     </option>
   </component>
@@ -346,12 +347,12 @@
       <option name="presentableId" value="Default" />
       <updated>1502792861244</updated>
       <workItem from="1502792862547" duration="17492000" />
-      <workItem from="1503059235336" duration="9719000" />
+      <workItem from="1503059235336" duration="10068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27211000" />
+    <option name="totallyTimeSpent" value="27560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1331" extended-state="6" />
@@ -498,22 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/envoi_msg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashbord/Inc/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashbord/Inc/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="927">
@@ -545,19 +530,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="65" column="142" lean-forward="true" selection-start-line="65" selection-start-column="142" selection-end-line="65" selection-end-column="142" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_class/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1067">
           <caret line="120" column="15" lean-forward="false" selection-start-line="120" selection-start-column="15" selection-end-line="120" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/version/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -568,6 +555,30 @@
           <folding>
             <element signature="e#0#44#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashbord/Inc/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="757">
+          <caret line="120" column="32" lean-forward="false" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/envoi_msg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
