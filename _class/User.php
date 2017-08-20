@@ -17,9 +17,9 @@ class User
     public $email;
 
 
-    public function __construct($id,$nom,$prenom,$username,$name_messenger,$remaining_message,$email)
+    public function __construct($nom,$prenom,$username,$name_messenger,$remaining_message,$email)
     {
-        $this->setId($id);
+        $this->setId(0);
         $this->setNom($nom);
         $this->setPrenom($prenom);
         $this->setUsername($username);
@@ -120,5 +120,110 @@ class User
     {
         return $this->email;
     }
+
+/**********************************************************************************************************************/
+
+    function register($id_type,$password)
+    {
+        $autorisation=$this->autorise_inscription();
+        $connexion=DAO::getConnection();
+
+        if($autorisation['isAllowed']==1)
+        {
+
+                $requete=$connexion->prepare("
+					INSERT INTO users(nom, user_name, email, password, name_messenger, id_type) 
+					VALUES (:nom, :user_name, :email, :password, :name_messenger, :id_type)
+					");
+
+                $requete->bindValue(':nom', utf8_decode($this->nom), PDO::PARAM_STR);
+                $requete->bindValue(':user_name', $this->username, PDO::PARAM_STR);
+                $requete->bindValue(':email', $this->email, PDO::PARAM_STR);
+                $requete->bindValue(':password', $password, PDO::PARAM_STR);
+                $requete->bindValue(':name_messenger', $this->username, PDO::PARAM_STR);
+                $requete->bindValue(':id_type', $id_type, PDO::PARAM_INT);
+                $requete->execute();
+
+                $this->id=$connexion->lastInsertId();
+        }
+
+        echo $autorisation['isAllowed']."/".$autorisation['message']."/".$this->id;
+       // return $this->id;
+
+    }
+
+
+
+/*
+INSERT INTO users(nom, user_name, email, password, name_messenger, id_type)
+VALUES (':nom', :'user_name', ':email', ':password', ':name_messenger', 2)
+*/
+
+
+    public function autorise_inscription()
+    {
+
+        $texte=array('isAllowed'=>0, 'message'=>'');
+        $connexion=DAO::getConnection();
+
+        //quand le mail est correcte
+        if (filter_var($this->email, FILTER_VALIDATE_EMAIL))
+        {
+            //on verifie si l'email n'existe pas encore
+            $requete=$connexion->prepare("
+							SELECT * FROM users 
+							WHERE 
+							email=:email
+			");
+
+            $requete->bindValue(':email', $this->email, PDO::PARAM_STR);
+            $requete->execute();
+
+            //sil'email n'existe pas encore
+            if($requete->rowCount()==0)
+            {
+
+                $requete_username=$connexion->prepare("
+                                SELECT * FROM users 
+                                WHERE 
+                                user_name=:username
+                ");
+
+                $requete_username->bindValue(':username', $this->username, PDO::PARAM_STR);
+                $requete_username->execute();
+
+                if($requete_username->rowCount()==0)
+                    {
+                        //est Autorisé à s'inscrire
+                        $texte['message']="Inscription réussie";
+                        $texte['isAllowed']=1;
+                    }
+                    else
+                    {
+
+                        $texte['message']="username_already_used";
+                        $texte['isAllowed']=0;
+                    }
+             }
+             else
+             {
+                    //le nombre d'inscription a atteint le nombre max d'inscription / jour
+                    $texte['message']="email_used";
+                    $texte['isAllowed']=0;
+             }
+        }
+        else
+        {
+            $texte['message']="email_non_valide";
+            $texte['isAllowed']=0;
+        }
+
+
+
+        return $texte;
+
+    }
+
+
 
 }
