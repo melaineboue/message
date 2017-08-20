@@ -1,26 +1,43 @@
 <div class="span3" id="sidebar">
     <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
-        <!--<li <?php echo isset($_SESSION['dash']) ? 'class="active"':''; ?>>
-            <a href="index.php"><i class="icon-chevron-right"></i> Tableau de bord</a>
-        </li>-->
-        <li <?php echo isset($_SESSION['send-single']) ? 'class="active"':''; ?>>
-            <a href="envoi.php"><i class="icon-chevron-right"></i> Envoi SMS</a>
+       <li <?php echo ($_SESSION['page']=='envoi') ? 'class="active"':''; ?>>
+            <a href="./"><i class="icon-chevron-right"></i> Envoi SMS</a>
         </li>
 
-        <!--<li <?php echo isset($_SESSION['contact']) ? 'class="active"':''; ?>>
+        <?php
+        if($user->type=='client')
+        {
+        ?>
+            <li <?php echo ($_SESSION['page']=='dashboard') ? 'class="active"':''; ?>>
+                <a href="dashboard.php"><i class="icon-chevron-right"></i> Tableau de bord</a>
+            </li>
+        <?php
+        }
+        else if($user->type=='admin')
+        {
+        ?>
+            <li <?php echo ($_SESSION['page']=='dashboard') ? 'class="active"':''; ?>>
+                <a href="dashboarda.php"><i class="icon-chevron-right"></i> Tableau de bord</a>
+            </li>
+        <?php
+        }
+        ?>
+
+
+        <!--<li <?php echo ($_SESSION['page']=='contact') ? 'class="active"':''; ?>>
             <a href="my-contact.php"><i class="icon-chevron-right"></i> Mes contacts</a>
         </li>
-        <li <?php echo isset($_SESSION['contactGroup']) ? 'class="active"':''; ?>>
+        <li <?php echo ($_SESSION['page']=='contactGroup') ? 'class="active"':''; ?>>
             <a href="contact-group.php"><i class="icon-chevron-right"></i> Créer un groupe de contacts</a>
         </li>
-        <li <?php echo isset($_SESSION['story']) ? 'class="active"':''; ?>>
+        <li <?php echo ($_SESSION['page']=='story') ? 'class="active"':''; ?>>
             <a href="story-reload.php"><i class="icon-chevron-right"></i> Historique de réchargement</a>
         </li>
 
-        <li <?php echo isset($_SESSION['report']) ? 'class="active"':''; ?>>
+        <li <?php echo ($_SESSION['page']=='report') ? 'class="active"':''; ?>>
             <a href="reports.php"><i class="icon-chevron-right"></i> Rapport SMS</a>
         </li>
-        <li <?php echo isset($_SESSION['editor']) ? 'class="active"':''; ?>>
+        <li <?php echo ($_SESSION['page']=='editor') ? 'class="active"':''; ?>>
             <a href="editor.php"><i class="icon-chevron-right"></i> Editer profile</a>
         </li>-->
         <li>

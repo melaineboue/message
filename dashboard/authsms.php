@@ -1,11 +1,14 @@
 <?php
 session_start();
 
+require_once '../_class/all_class.php';
+
 header("Content-Type: text/html; charset=UTF-8");
 
 $_SESSION['sender'] = $_GET['sender'];
 $_SESSION['recipient'] = $_GET['recipient'];
 $_SESSION['message'] = str_replace("â","a",$_GET['message']);
+$nombre_message=$_GET['nb'];
 
 $_SESSION['login']="sylvere18";
 $_SESSION['pwd']="web43947";
@@ -35,6 +38,7 @@ $password = $_SESSION['pwd'];
             $ip = $_SERVER['REMOTE_ADDR'];
             $url="https://1s2u.com/sms/sendsms/sendsms.asp?username=" . $login . "&password=" .$password. "&mt=" .$msgType. "&fl=" .$flash. "&sid=" .$sender. "&mno=" .$recipient. "&ipcl=" .$ip. "&msg=" .$message;
 
+            DAO::sentMessage($_SESSION['com_message__id'],$_SESSION['message'],$_SESSION['sender'],$_SESSION['recipient'],$nombre_message);
             echo $url;
         }
 
@@ -47,9 +51,3 @@ $password = $_SESSION['pwd'];
 ?>
 
 
-
-
-<?php
-//header("Location:sendsms.php");
-session_destroy();
-?>

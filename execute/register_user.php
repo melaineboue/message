@@ -12,9 +12,10 @@ if(isset($_GET['name']))
     $name=$_GET['name'];
     $email=$_GET['email'];
     $username=$_GET['username'];
+    $expediteur=$_GET['expediteur'];
     $password=md5($_GET['password']);
 
-    $user=new User($name,"",$username,$username,0,$email);
+    $user=new User($name,"",$username,$expediteur,0,$email);
     $user->register(2,$password);
     //var_dump($user);
 }

@@ -118,7 +118,7 @@ header("Content-Type: text/html; charset=UTF-8");
             </div>
             <div class="contact-section">
                 <div class="container">
-                    <form method="get" action="authsms.php">
+                    <form method="get" action="authsms_.php">
                         <div class="col-md-6 form-line">
                             <div class="form-group">
                                 <label for="exampleInputUsername">Nom Expéditeur</label>

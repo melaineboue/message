@@ -7,4 +7,20 @@
  */
 ?>
 
-Version 0.2.1
+Version 0.9.3
+<hr/>
+Historique version
+<br/>
+
+<div style="cursor: pointer" title=
+"Ajout du champs nom expediteur à l'inscription
+Tableau de bord client
+"> Version 0.9.3</div>
+
+
+<div style="cursor: pointer" title=
+"Version 1 online
+Inscription
+Connexion
+Envoi de message
+"> Version 0.9.2</div>

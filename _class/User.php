@@ -15,6 +15,8 @@ class User
     public $name_messenger;
     public $remaining_message;
     public $email;
+    public $type;
+    public $identifiant;
 
 
     public function __construct($nom,$prenom,$username,$name_messenger,$remaining_message,$email)
@@ -26,6 +28,8 @@ class User
         $this->setNameMessenger($name_messenger);
         $this->setRemainingMessage($remaining_message);
         $this->setEmail($email);
+        $this->type='client';
+        $this->identifiant="";
     }
 
 
@@ -71,6 +75,12 @@ class User
     public function setEmail($email)
     {
         $this->email=$email;
+    }
+
+
+    public function setIdentifiant($id)
+    {
+        $this->identifiant=$id;
     }
 
 
@@ -121,7 +131,14 @@ class User
         return $this->email;
     }
 
-/**********************************************************************************************************************/
+
+    public function getIdentifiant()
+    {
+        return $this->identifiant;
+    }
+
+
+    /**********************************************************************************************************************/
 
     function register($id_type,$password)
     {
@@ -148,17 +165,54 @@ class User
         }
 
         echo $autorisation['isAllowed']."/".$autorisation['message']."/".$this->id;
-       // return $this->id;
-
     }
 
 
 
-/*
-INSERT INTO users(nom, user_name, email, password, name_messenger, id_type)
-VALUES (':nom', :'user_name', ':email', ':password', ':name_messenger', 2)
-*/
+    function getNumberMessageSent()
+    {
+        $connexion=DAO::getConnection();
+        $requete=$connexion->prepare("
+            SELECT * FROM message WHERE id_user=:id_user
+        ");
 
+        $requete->bindValue(':id_user',$this->id,PDO::PARAM_INT);
+        $requete->execute();
+        return $requete->rowCount();
+    }
+
+
+    function getRechargement()
+    {
+        $connexion=DAO::getConnection();
+        $requete=$connexion->prepare("
+            SELECT SUM(quantite) as quantite FROM rechargement WHERE id_user=:id_user
+        ");
+
+        $requete->bindValue(':id_user',$this->id,PDO::PARAM_INT);
+        $requete->execute();
+        $reponse=$requete->fetch();
+        return (trim($reponse['quantite'])!="")?$reponse['quantite']:0;
+
+    }
+
+    /**********************************************************************************************************************/
+
+    function getNumberMessageSentToday()
+    {
+        $connexion=DAO::getConnection();
+        $requete=$connexion->prepare("
+            SELECT * FROM message WHERE id_user=:id_user AND DATE(date_envoi)=DATE(NOW())
+        ");
+
+        $requete->bindValue(':id_user',$this->id,PDO::PARAM_INT);
+        $requete->execute();
+        return $requete->rowCount();
+    }
+
+/**********************************************************************************************************************/
+
+/**********************************************************************************************************************/
 
     public function autorise_inscription()
     {

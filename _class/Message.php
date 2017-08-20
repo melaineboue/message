@@ -11,6 +11,8 @@ class Message
 
     public $contenu;
     public $destinataire;
+    public $id_user;
+    public $expediteur_nom;
     public $date;
 
 

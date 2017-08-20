@@ -59,5 +59,5 @@ $password = $_SESSION['pwd'];
 
 <?php
 //header("Location:sendsms.php");
-session_destroy();
+
 ?>

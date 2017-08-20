@@ -62,6 +62,19 @@ $_SESSION['account'] = 'register.php';
                     </div>
                 </div>
 
+
+                <div class="form-group">
+                    <label for="email" class="cols-sm-2 control-label"><!--Votre adresse Email *--></label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control input-lg expediteur" name="expediteur" id="expediteur"  placeholder="Entrez votre nom de l'expediteur des sms" title="Ce nom va s'afficher comme expediteur des messages que vous envoyez" required />
+                        </div>
+                        <span class="required_name_messenger hidden">Vous devez renseigner le nom d'expediteur</span>
+                    </div>
+                </div>
+
+
                 <div class="form-group">
                     <label for="username" class="cols-sm-2 control-label"> <!--Nom utilisateur *--></label>
                     <div class="cols-sm-10">
@@ -104,7 +117,7 @@ $_SESSION['account'] = 'register.php';
             </form>
 
             <div class="alert alert-success message_compte_cree hidden">
-                Votre compte a été, vous serez redirigé dans un instant
+                Votre compte a été, vous serez redirigé dans <span class="seconde_redirection">4</span> s
             </div>
 
         </div>
