@@ -84,9 +84,11 @@
       <file leaf-file-name="details_contact.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="71" column="72" lean-forward="false" selection-start-line="71" selection-start-column="72" selection-end-line="71" selection-end-column="72" />
-              <folding />
+            <state relative-caret-position="777">
+              <caret line="58" column="74" lean-forward="false" selection-start-line="58" selection-start-column="74" selection-end-line="58" selection-end-column="74" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,8 +96,8 @@
       <file leaf-file-name="modele_contact.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/modele/modele_contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            <state relative-caret-position="336">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -170,8 +172,8 @@
         <option value="$PROJECT_DIR$/dashboard/Inc/sidebar.php" />
         <option value="$PROJECT_DIR$/dashboard/my-contact.php" />
         <option value="$PROJECT_DIR$/dashboard/modele/modele_contact.php" />
-        <option value="$PROJECT_DIR$/dashboard/Inc/details_contact.php" />
         <option value="$PROJECT_DIR$/_class/User.php" />
+        <option value="$PROJECT_DIR$/dashboard/Inc/details_contact.php" />
       </list>
     </option>
   </component>
@@ -183,7 +185,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="2391" />
+    <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="2418" />
     <option name="height" value="1331" />
@@ -426,15 +428,15 @@
       <option name="presentableId" value="Default" />
       <updated>1502792861244</updated>
       <workItem from="1502792862547" duration="17492000" />
-      <workItem from="1503059235336" duration="65584000" />
+      <workItem from="1503059235336" duration="67732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83076000" />
+    <option name="totallyTimeSpent" value="85224000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2391" y="-9" width="2418" height="1331" extended-state="6" />
+    <frame x="-9" y="-9" width="2418" height="1331" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19958334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -863,14 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/modele/modele_contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_class/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="815">
@@ -888,11 +882,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/modele/modele_contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="71" column="72" lean-forward="false" selection-start-line="71" selection-start-column="72" selection-end-line="71" selection-end-column="72" />
-          <folding />
+        <state relative-caret-position="777">
+          <caret line="58" column="74" lean-forward="false" selection-start-line="58" selection-start-column="74" selection-end-line="58" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -3,12 +3,13 @@
         <!-- block -->
         <div class="block">
             <div class="navbar navbar-inner block-header">
-                <div class="muted pull-left">Contacts</div>
-                <div class="pull-right"><span class="badge badge-info"><?php echo number_format($nombre_contact,0,","," ") ?></span>
+                <div class="muted pull-left"><b>Contacts</b></div>
+                <div class="pull-right"><span class="badge badge-info"><?php echo number_format(sizeof($liste_contact),0,","," ") ?></span>
 
                 </div>
             </div>
             <div class="navbar navbar-inner block-header">
+                <div class="muted pull-left nom_groupe">Tout les contact</div>
                 <div class="pull-right"><input type="search" placeholder="Rechercher"/></span>
 
                 </div>
@@ -24,15 +25,17 @@
                     </thead>
                     <tbody>
                     <?php
+                    $i=1;
                     foreach ($liste_contact as $contact)
                     {
                         ?>
                         <tr>
-                            <td>1</td>
-                            <td>15/08/2017</td>
-                            <td>28</td>
+                            <td><?php echo $i ?></td>
+                            <td><?php echo htmlspecialchars($contact['nom']) ?></td>
+                            <td><?php echo htmlspecialchars($contact['numero']) ?></td>
                         </tr>
                         <?php
+                        $i++;
                     }
                     ?>
 
@@ -48,12 +51,12 @@
         <div class="block">
             <div class="navbar navbar-inner block-header">
                 <div class="muted pull-left">Groupe</div>
-                <div class="pull-right"><span class="badge badge-info"> <?php echo number_format($nombre_groupe,0,","," ") ?></span>
+                <div class="pull-right"><span class="badge badge-info"> <?php echo number_format(sizeof($liste_groupe),0,","," ") ?></span>
 
                 </div>
             </div>
             <div class="block-content collapse in">
-                <table class="table table-striped">
+                <table class="table table-striped " style="cursor: pointer">
                     <thead>
                     <tr>
                         <th>#</th>
@@ -63,15 +66,17 @@
                     </thead>
                     <tbody>
                     <?php
+                    $j=1;
                     foreach ($liste_groupe as $groupe)
                     {
                         ?>
                         <tr>
-                            <td>1</td>
+                            <td><?php echo $j ?></td>
                             <td><?php echo $groupe['nom_groupe'] ?></td>
                             <td><?php echo number_format($groupe['nombre'],0,","," ") ?></td>
                         </tr>
                         <?php
+                        $j++;
                     }
                     ?>
 
