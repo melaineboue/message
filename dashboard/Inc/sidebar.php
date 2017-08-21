@@ -24,10 +24,11 @@
         ?>
 
 
-        <!--<li <?php echo ($_SESSION['page']=='contact') ? 'class="active"':''; ?>>
+        <li <?php echo ($_SESSION['page']=='contact') ? 'class="active"':''; ?>>
             <a href="my-contact.php"><i class="icon-chevron-right"></i> Mes contacts</a>
         </li>
-        <li <?php echo ($_SESSION['page']=='contactGroup') ? 'class="active"':''; ?>>
+
+        <!--<li <?php echo ($_SESSION['page']=='contactGroup') ? 'class="active"':''; ?>>
             <a href="contact-group.php"><i class="icon-chevron-right"></i> Créer un groupe de contacts</a>
         </li>
         <li <?php echo ($_SESSION['page']=='story') ? 'class="active"':''; ?>>

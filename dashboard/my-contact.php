@@ -2,7 +2,9 @@
 session_start();
 header("Content-Type: text/html; charset=UTF-8");
 
-$_SESSION['contact'] = "my-contact.php";
+$_SESSION['page'] = "contact";
+require_once 'modele/modele_contact.php';
+
 ?>
 
 
@@ -39,7 +41,7 @@ include_once 'Inc/navbar.php';
             //            include_once 'Inc/stats.php';
 
             // DETAILS SMS ENVOYES
-            //            include_once 'Inc/detail-sms.php';
+                        include_once 'Inc/details_contact.php';
             ?>
 
         </div>
@@ -58,9 +60,3 @@ include_once 'Inc/scriptJS.php';
 </body>
 
 </html>
-
-
-
-<?php
-session_destroy();
-?>
