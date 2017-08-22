@@ -153,7 +153,12 @@ class User
     public function getGroup()
     {
         $connexion=DAO::getConnection();
-        $requete=$connexion->prepare("SELECT g.nom_groupe,g.id_groupe,COUNT(*) as nombre FROM contact_groupe cg, groupe g WHERE cg.id_groupe=g.id_groupe AND id_user=:id_user GROUP BY cg.id_groupe");
+        $requete=$connexion->prepare("
+            (SELECT g.nom_groupe,g.id_groupe,COUNT(*) as nombre FROM contact_groupe cg, groupe g WHERE cg.id_groupe=g.id_groupe AND id_user=:id_user GROUP BY cg.id_groupe)
+            UNION
+            (SELECT nom_groupe,id_groupe, 0 as nombre FROM groupe WHERE id_groupe NOT IN (SELECT id_groupe FROM contact_groupe))
+            
+            ");
         $requete->bindValue(':id_user',$this->getId());
         $requete->execute();
         return $requete->fetchAll();

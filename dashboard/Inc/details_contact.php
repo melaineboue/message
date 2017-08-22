@@ -13,24 +13,30 @@
 
 
 
-            <div class="row modal fade" role="dialog" id="edit_token">
+            <div class="row modal fade" role="dialog" id="add_contact">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Edit token of <?php echo $student->name ?></h4>
+                            <h4 class="modal-title">Ajout de nouveau contact</h4>
                         </div>
                         <div class="modal-body">
                             <div class="row">
                                 <div class="form-group">
-                                    <input class="form-control token_value_edit" type="number" name="" value="0" />
+                                    <center class="row">
+                                        <input class="ajout_nom" type="text" name="ajout_nom" placeholder="Nom" />
+                                    </center>
+
+                                    <center class="row">
+                                        <input class="ajout_numero" type="number" name="ajout_numero" placeholder="Numero (Ex 22545774483)" />
+                                    </center>
+
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default bouton_reduce_token" data-dismiss="modal"  alt="<?php echo $student->id ?>" >Deduct</button>
-                            <button type="button" class="btn btn-default bouton_add_token" data-dismiss="modal" alt="<?php echo $student->id ?>" >Add</button>
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-default bouton_add_contact" data-dismiss="modal" " >VALIDER</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
                         </div>
                     </div>
                 </div>
@@ -78,9 +84,11 @@
                             <td class="nom"><?php echo htmlspecialchars($contact['nom']) ?></td>
                             <td class="numero"><?php echo htmlspecialchars($contact['numero']) ?></td>
                             <td>
-                                <span class="modifier_contact icon-pencil" style="cursor: pointer" title="Modifier le contact"  data-id="<?php echo $contact['id_contact'] ?>"></span>
-                                <span class="modifier_contact icon-check" style="cursor: pointer" title="Modifier le contact"  data-id="<?php echo $contact['id_contact'] ?>"></span>
-                               <!-- <span class="modifier_contact icon-close" style="cursor: pointer" title="Modifier le contact"  data-id="<?php echo $contact['id_contact'] ?>"></span>-->
+                                <span class="modifier_contact modifier_contact<?php echo $contact['id_contact'] ?> icon-pencil" style="cursor: pointer" title="Modifier le contact"  data-id="<?php echo $contact['id_contact'] ?>"></span>
+                                <span class="hidden icon-ok validate_modification validate_modification<?php echo $contact['id_contact'] ?>" style="cursor: pointer" title="Valider la modification"  data-id="<?php echo $contact['id_contact'] ?>"></span>
+                                <span class="hidden icon-remove cancel_modification cancel_modification<?php echo $contact['id_contact'] ?>" style="cursor: pointer" title="Annuler la modification"  data-id="<?php echo $contact['id_contact'] ?>"></span>
+                                <span class="icon-trash delete_contact delete_contact<?php echo $contact['id_contact'] ?>" style="cursor: pointer" title="Supprimer le contact"  data-id="<?php echo $contact['id_contact'] ?>"></span>
+
                             </td>
                         </tr>
                         <?php
@@ -97,7 +105,51 @@
     </div>
     <div class="span6">
         <!-- block -->
+
+
         <div class="block">
+            <div class="text-right">
+                <span  data-toggle="modal" data-target="#add_groupe" title="Ajouter nouveau groupe" style="cursor:pointer">Ajouter groupe
+                </span>
+
+            </div>
+
+
+
+
+
+            <div class="row modal fade" role="dialog" id="add_groupe">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Ajout de nouveau groupe</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="form-group">
+                                    <center class="row">
+                                        <input class="nom_groupe_ajouter" type="text" name="nom_groupe" placeholder="Nom" />
+                                    </center>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default bouton_add_groupe" data-dismiss="modal" " >VALIDER</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="block">
             <div class="navbar navbar-inner block-header">
                 <div class="muted pull-left">Groupe</div>
                 <div class="pull-right"><span class="badge badge-info"> <?php echo number_format(sizeof($liste_groupe),0,","," ") ?></span>
@@ -111,6 +163,7 @@
                         <th>#</th>
                         <th>Nom groupe</th>
                         <th>Nombre de membre</th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -119,10 +172,17 @@
                     foreach ($liste_groupe as $groupe)
                     {
                         ?>
-                        <tr data-id="<?php echo $groupe['id_groupe'] ?>">
+                        <tr class="ligne_groupe<?php echo $groupe['id_groupe'] ?>" data-id="<?php echo $groupe['id_groupe'] ?>">
                             <td><?php echo $j ?></td>
-                            <td><?php echo $groupe['nom_groupe'] ?></td>
-                            <td><?php echo number_format($groupe['nombre'],0,","," ") ?></td>
+                            <td class="nom_groupe"><?php echo $groupe['nom_groupe'] ?></td>
+                            <td class="nombre_membre"><?php echo number_format($groupe['nombre'],0,","," ") ?></td>
+                            <td>
+                                <span class="modifier_groupe modifier_groupe<?php echo $groupe['id_groupe'] ?> icon-pencil" style="cursor: pointer" title="Modifier le contact"  data-id="<?php echo $groupe['id_groupe'] ?>"></span>
+                                <span class="hidden icon-ok validate_modification_groupe validate_modification_groupe<?php echo $groupe['id_groupe'] ?>" style="cursor: pointer" title="Valider la modification"  data-id="<?php echo $groupe['id_groupe'] ?>"></span>
+                                <span class="hidden icon-remove cancel_modification_groupe cancel_modification_groupe<?php echo $groupe['id_groupe'] ?>" style="cursor: pointer" title="Annuler la modification"  data-id="<?php echo $groupe['id_groupe'] ?>"></span>
+                                <span class="icon-trash delete_groupe delete_groupe<?php echo $groupe['id_groupe'] ?>" style="cursor: pointer" title="Supprimer le contact"  data-id="<?php echo $groupe['id_groupe'] ?>"></span>
+
+                            </td>
                         </tr>
                         <?php
                         $j++;

@@ -15,6 +15,7 @@ Historique version
 <div style="cursor: pointer" title=
 "Ajout du champs nom expediteur à l'inscription
 Tableau de bord client
+Gestion des contact
 "> Version 0.9.3</div>
 
 
