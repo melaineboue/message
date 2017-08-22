@@ -57,6 +57,8 @@ include_once 'Inc/navbar.php';
 //  FICHIER JS
 include_once 'Inc/scriptJS.php';
 ?>
+
+<script src="../js/contact.js"></script>
 </body>
 
 </html>
